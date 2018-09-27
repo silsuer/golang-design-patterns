@@ -4,7 +4,7 @@
 
 - 创建型模式
 
-  1. [单例模式]()
+  1. [单例模式](https://github.com/silsuer/golang-design-patterns/blob/master/singleton/README.md)
 
   2. 工厂方法模式
 

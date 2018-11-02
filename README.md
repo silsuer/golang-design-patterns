@@ -10,7 +10,7 @@
 
   1. [单例模式](https://github.com/silsuer/golang-design-patterns/blob/master/singleton/README.md)
 
-  2. 简单工厂模式
+  2. [简单工厂模式](https://github.com/silsuer/golang-design-patterns/tree/master/simple-factory-pattern)
   
   3. 工厂方法模式
 

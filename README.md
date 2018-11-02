@@ -2,17 +2,23 @@
 
 ## 使用golang实现各种设计模式
 
+> golang的最佳实践中并不建议在应用中使用大量的设计模式，望周知
+
+> Keep It Simple, Stupid.
+
 - 创建型模式
 
   1. [单例模式](https://github.com/silsuer/golang-design-patterns/blob/master/singleton/README.md)
 
-  2. 工厂方法模式
+  2. 简单工厂模式
+  
+  3. 工厂方法模式
 
-  3. 抽象工厂模式
+  4. 抽象工厂模式
   
-  4. 建造者模式
+  5. 建造者模式
   
-  5. 原型模式 
+  6. 原型模式 
 
 - 行为型模式
 

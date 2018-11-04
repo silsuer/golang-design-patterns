@@ -230,7 +230,7 @@
 
    2. 对简单工厂，增加功能修改的是工厂类；对工厂方法，增加功能修改的是产品类。
 
-** 上述代码均放在 [golang-design-patterns](https://github.com/silsuer/golang-design-patterns) 这个仓库中 **
+> 上述代码均放在 [golang-design-patterns](https://github.com/silsuer/golang-design-patterns) 这个仓库中
 
 > 打个广告，推荐一下自己写的 go web框架 [bingo](https://github.com/silsuer/bingo),求star，求PR ~
 

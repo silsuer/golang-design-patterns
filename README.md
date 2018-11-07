@@ -14,7 +14,7 @@
   
   3. [工厂方法模式](https://github.com/silsuer/golang-design-patterns/tree/master/factory-method-pattern)
 
-  4. 抽象工厂模式
+  4. [抽象工厂模式](https://github.com/silsuer/golang-design-patterns/tree/master/abstract-factory-pattern)
   
   5. 建造者模式
   

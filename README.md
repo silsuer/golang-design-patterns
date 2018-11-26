@@ -18,7 +18,7 @@
   
   5. [建造者模式](https://github.com/silsuer/golang-design-patterns/tree/master/builder-pattern)
   
-  6. 原型模式 
+  6. [原型模式](https://github.com/silsuer/golang-design-patterns/tree/master/prototype-pattern)
 
 - 行为型模式
 

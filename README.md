@@ -22,7 +22,7 @@
 
 - 行为型模式
 
-  1. 访问者模式
+  1. [访问者模式](https://github.com/silsuer/golang-design-patterns/tree/master/visitor-pattern)
   
   2. 模板模式
   

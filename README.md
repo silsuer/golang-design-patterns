@@ -24,7 +24,7 @@
 
   1. [访问者模式](https://github.com/silsuer/golang-design-patterns/tree/master/visitor-pattern)
   
-  2. 模板模式
+  2. [模板模式](https://github.com/silsuer/golang-design-patterns/tree/master/template-pattern)
   
   3. 策略模式
   

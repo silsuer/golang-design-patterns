@@ -30,7 +30,7 @@
   
   4. 状态模式
   
-  5. 观察者模式
+  5. [观察者模式](https://github.com/silsuer/golang-design-patterns/tree/master/observer-pattern)
   
   6. 备忘录模式
   

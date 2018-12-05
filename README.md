@@ -32,7 +32,7 @@
   
   5. [观察者模式](https://github.com/silsuer/golang-design-patterns/tree/master/observer-pattern)
   
-  6. 备忘录模式
+  6. [备忘录模式](https://github.com/silsuer/golang-design-patterns/tree/master/memento-pattern)
   
   7. 中介者模式
   

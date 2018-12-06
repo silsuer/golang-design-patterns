@@ -34,7 +34,7 @@
   
   6. [备忘录模式](https://github.com/silsuer/golang-design-patterns/tree/master/memento-pattern)
   
-  7. 中介者模式
+  7. [中介者模式](https://github.com/silsuer/golang-design-patterns/tree/master/mediator-pattern)
   
   8. 迭代器模式
   

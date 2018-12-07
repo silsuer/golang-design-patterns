@@ -232,6 +232,7 @@
 优点:
   1. 这个不用说了，设计模式的最大优点——解耦，增加容器或者迭代器都无需修改源代码，并且简化了容器类，将迭代逻辑抽出来，放在了迭代器中
   2. 可以用不同的方式来遍历同一个对象（这就是上面说的，通过传入不同的回调来进行不同的迭代）
+<<<<<<< HEAD
   # 迭代器模式
   
   ## 定义
@@ -473,3 +474,4 @@
   > 上述代码均放在 [golang-design-patterns](https://github.com/silsuer/golang-design-patterns) 这个仓库中
     
   > 打个广告，推荐一下自己写的 go web框架 [bingo](https://github.com/silsuer/bingo),求star，求PR ~
+

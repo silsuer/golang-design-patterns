@@ -36,7 +36,7 @@
   
   7. [中介者模式](https://github.com/silsuer/golang-design-patterns/tree/master/mediator-pattern)
   
-  8. 迭代器模式
+  8. [迭代器模式](https://github.com/silsuer/golang-design-patterns/tree/master/iterator-pattern)
   
   9. 解释器模式
   

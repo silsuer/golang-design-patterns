@@ -26,7 +26,7 @@
   
   2. [模板模式](https://github.com/silsuer/golang-design-patterns/tree/master/template-pattern)
   
-  3. 策略模式
+  3. [策略模式](https://github.com/silsuer/golang-design-patterns/tree/master/strategy-pattern)
   
   4. 状态模式
   

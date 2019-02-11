@@ -2,22 +2,76 @@
 
 ## 定义
 
-> wiki: 策略模式作为一种软件设计模式，指对象有某个行为，但是在不同的场景中，该行为有不同的实现算法。比如每个人都要“交个人所得税”，但是“在美国交个人所得税”和“在中国交个人所得税”就有不同的算税方法.
+> wiki: 定义一组算法，将每个算法都封装起来，并且使他们之间可以互换
 
-特点:
- - 定义了一族算法（业务规则）
- - 封装了每个算法
- - 这族的算法可互换代替（interchangeable）
+在实际应用中， 我们对不同的场景要采取不同的应对措施，也就是不同的策略，比如一个对数据排序的方法，根据数据量和数据特征的不同，我们需要调用不同的排序方法，我们可以把所有的排序算法都封装在同一个函数中，然后通过`if...else`的形式来调用不同的排序算法，这种方式称之为硬编码，可是在实际应用中，功能和体量的不断增长就会使得我们要经常修改源代码，让这个函数越来越难以维护。所以还是为了解耦，策略模式定义一些独立的类来封装不同的算法，每一个类封装一个具体的算法（即策略），策略模式和模板模式有些相似，需要定义一个抽象类来作为策略的基本模板，每一种策略就是这个抽象类延伸出来的具体类来。
 
-策略模式，和其他设计模式的优点相同，都是为了解耦。 可以让客户端自行选择某一行为要使用的策略，我们可以针对不同的情况，来使用不同的策略（方式不同，但是目的相同，这也是第三个特点，算法族中的算法可互相替换）。
+## 角色
+
+ - Context: 上下文环境
+ 
+ - Strategy: 抽象策略类
+ 
+ - ConcreteStrategy: 具体策略类
 
 ## 类图
 
-![](https://gss1.bdstatic.com/-vo3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike72%2C5%2C5%2C72%2C24/sign=3c1919f176094b36cf9f13bfc2a517bc/5366d0160924ab189a9f061935fae6cd7b890b16.jpg)
-
-(图源百度百科)
-
-由一个策略接口，从接口延伸出一个策略族，由上下文`Context`来调用策略族中的具体策略
+  ![](https://design-patterns.readthedocs.io/zh_CN/latest/_images/Strategy.jpg)
+  
+  从类图可以看出策略模式和模板模式的相似，只是多了一个 上下文(`Context`)来控制使用不同的策略
 
 ## 举个栗子
 
+  还用上面说的选择排序算法的栗子:
+  
+  1. 定义抽象策略接口
+  
+   ```
+     type IStrategy interface {
+   	    SortList() // 对列表进行排序
+     }
+   ```
+  2. 定义具体策略
+  
+   ```
+    // 这里定义了冒泡排序和归并排序两种策略
+    type BubbleSortStrategy struct {}
+    
+    func ( b BubbleSortStrategy) SortList()  {
+    	fmt.Println("这是冒泡排序")
+    }
+    
+    type MergeSortStrategy struct {}
+    
+    func (m MergeSortStrategy) SortList()  {
+    	fmt.Println("这是归并排序")
+    }
+   ```
+ 
+  3. 定义上下文
+   
+   ```
+     type Context struct {
+     	Strategy IStrategy  // 上下文中指定的策略
+     }
+     
+     func (c Context) Exec() {
+     	c.Strategy.SortList()
+     }
+   ```
+   
+  4. 开始使用
+  
+   ```
+     // 载入不同的策略，就可以使用不同的算法
+     func main() {
+       var ctx Context
+       fmt.Println("====使用冒泡排序算法=====")
+       ctx = Context{Strategy:BubbleSortStrategy{}}
+       ctx.Exec()
+     
+       fmt.Println("====使用归并排序算法=====")
+       ctx = Context{Strategy:MergeSortStrategy{}}
+       ctx.Exec()
+     }
+   ```
